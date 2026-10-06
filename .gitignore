@@ -1,0 +1,5 @@
+__pycache__/
+LOG_imapsync/
+build/
+dist/
+*.egg-info/

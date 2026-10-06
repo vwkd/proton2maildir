@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proton2maildir"
+dynamic = ["version"]
+description = "Convert a Proton Mail Export Tool export into a Maildir"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+proton2maildir = "proton2maildir:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["proton2maildir"]
+
+[tool.setuptools.dynamic]
+version = { attr = "proton2maildir.__version__" }
